@@ -1,8 +1,8 @@
 {
   "name": "m5ui",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "this is a h5 ui framework based on vue2.6.7",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
