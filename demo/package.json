@@ -26,6 +26,8 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "lodash": "^4.17.11"
+    "element-ui": "^2.6.1",
+    "lodash": "^4.17.11",
+    "muse-ui": "^3.0.2"
   }
 }
