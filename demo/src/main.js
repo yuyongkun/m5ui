@@ -1,7 +1,8 @@
 import Vue from 'vue'
-import UI from '../../src'
 import App from './App.vue'
-Vue.use(UI)
+import m5ui from 'm5ui/src'
+// Vue.config.productionTip=false;
+Vue.use(m5ui)
 new Vue({
     el:'#app',
    render(h){
