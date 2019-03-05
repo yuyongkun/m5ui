@@ -1,0 +1,28 @@
+{
+  "name": "m5ui",
+  "version": "1.0.0",
+  "description": "this is a h5 ui framework based on vue2.6.7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yuyongkun/m5ui.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "yuyuongkun4519",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuyongkun/m5ui/issues"
+  },
+  "homepage": "https://github.com/yuyongkun/m5ui#readme",
+  "dependencies": {
+    "vue": "^2.6.7"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
+  }
+}

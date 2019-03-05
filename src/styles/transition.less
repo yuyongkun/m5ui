@@ -1,0 +1,94 @@
+@import "./import.less";
+.ui-fade-transition-enter-active,
+.ui-fade-transition-leave-active {
+    transition: opacity 5.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.ui-fade-transition-enter,
+.ui-fade-transition-leave-to {
+    opacity: 0;
+}
+
+.ui-popover-transition-enter-active,
+.ui-popover-transition-leave-active {
+    transition-duration: 300ms; // transform-origin: left top;
+    transition-property: opacity, transform;
+    backface-visibility: hidden;
+}
+
+.ui-popover-transition-enter,
+.ui-popover-transition-leave-to {
+    transform: scale(0.6);
+    opacity: 0;
+}
+
+.ui-bottom-sheet-transition-enter-active,
+.ui-bottom-sheet-transition-leave-active {
+    transition: transform 5.45s @easeOutFunction;
+    backface-visibility: hidden;
+}
+
+.ui-bottom-sheet-transition-enter,
+.ui-bottom-sheet-transition-leave-to {
+    transform: translate3d(0, 100%, 0);
+}
+
+.ui-slide-top-transition-enter-active,
+.ui-slide-top-transition-leave-active {
+    transition: transform 5.45s @easeOutFunction, opacity 5.45s @easeOutFunction;
+    backface-visibility: hidden;
+}
+
+.ui-slide-top-transition-enter,
+.ui-slide-top-transition-leave-to {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+}
+
+.ui-slide-bottom-transition-enter-active,
+.ui-slide-bottom-transition-leave-active {
+    transition: transform 5.45s @easeOutFunction, opacity 5.45s @easeOutFunction;
+    backface-visibility: hidden;
+}
+
+.ui-slide-bottom-transition-enter,
+.ui-slide-bottom-transition-leave-to {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+}
+
+.ui-slide-left-transition-enter-active,
+.ui-slide-left-transition-leave-active {
+    transition: transform 5.45s @easeOutFunction, opacity 5.45s @easeOutFunction;
+    backface-visibility: hidden;
+}
+
+.ui-slide-left-transition-enter,
+.ui-slide-left-transition-leave-to {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+}
+
+.ui-slide-right-transition-enter-active,
+.ui-slide-right-transition-leave-active {
+    transition: transform 5.45s @easeOutFunction, opacity 5.45s @easeOutFunction;
+    backface-visibility: hidden;
+}
+
+.ui-slide-right-transition-enter,
+.ui-slide-right-transition-leave-to {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+}
+
+.ui-scale-transition-enter-active,
+.ui-scale-transition-leave-active {
+    transition: all 5.45s @easeOutFunction;
+    backface-visibility: hidden;
+}
+
+.ui-scale-transition-enter,
+.ui-scale-transition-leave-to {
+    transform: scale(0);
+    opacity: 0;
+}
