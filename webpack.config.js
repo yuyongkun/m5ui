@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 module.exports = {
     entry: {
-        m5ui:'./src/index.js'
+        m5ui: './src/index.js'
     },
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -16,17 +16,24 @@ module.exports = {
     module: {
         rules: [
             {
-                test:/\.(jsx|js)$/,
-                use:{
-                    loader:'babel-loader',
-                    options:{
-                        presets:[
-                            "env"
-                        ],
-                        "plugins":["transform-object-rest-spread"]
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        "presets": [
+                            [
+                                "@babel/preset-env",
+                                {
+                                    "targets": {
+                                        "esmodules": true
+                                    },
+                                    modules:false
+                                }
+                            ]
+                        ]
                     }
-                },
-                exclude:/node_modules/
+                }
             },
             {
                 test: /\.less$/,
