@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         m5ui: './src/index.js'
     },
+    devtool:'cheap-module-source-map',
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].js',
