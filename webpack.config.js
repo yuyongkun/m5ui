@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+
 module.exports = {
     entry: {
         m5ui: './src/index.js'
@@ -26,9 +27,9 @@ module.exports = {
                             [
                                 "@babel/preset-env",
                                 {
-                                    "targets": {
-                                        "esmodules": true
-                                    },
+                                    // "targets": {
+                                    //     "esmodules": true
+                                    // },
                                     modules:false
                                 }
                             ]
